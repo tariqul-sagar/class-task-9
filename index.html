@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>Class task 9</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="images/png" href="images/logo.png" sizes="16x16">
+    <!-- Fonts Link -->
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Media Query File -->
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+  </head>
+  <body>
+    <div class="p-3 m-0 border-0 bd-example">
+      <div class="container">
+        <h2>Card</h2>
+        <div class="row">
+          <div class="col-lg-4 offset-4">
+            <div class="card">
+              <div class="card-header bg-success">
+                <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <img class="card-img-top" src="images/img4.jpg" alt="Nature">
+              <div class="card-body">
+                <h1 class="card-title">Lorem ipsum</h1>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis, voluptatem numquam illo asperiores nobis tempore nisi et earum distinctio.</p>
+              </div>
+              <div class="card-footer bg-success">
+                <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Collapse with href & button</h2>
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseid" role="button" aria-expanded="false" aria-controls="collapseid">
+            Collapse Link with href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseid" aria-expanded="false" aria-controls="collapseid">
+            Collapse Button with data-bs-target
+          </button>
+        </p>
+        <div class="collapse" id="collapseid">
+          <div class="card card-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ex quas aspernatur dolor ab reprehenderit alias quibusdam amet earum, assumenda facilis perspiciatis dignissimos quisquam rem? Saepe, unde, nisi! Nobis, deserunt excepturi iste laudantium temporibus similique sed, culpa commodi inventore, saepe minima provident obcaecati sequi a quasi ab animi optio. Sapiente!
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Multiple targets</h2>
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multicollapseid1" role="button" aria-expanded="false" aria-controls="multicollapseid1">Toggle first element</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multicollapseid2" aria-expanded="false" aria-controls="multicollapseid2">Toggle second element</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multicollapseid1 multicollapseid2">Toggle both elements</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multicollapseid1">
+              <div class="card card-body">
+                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multicollapseid2">
+              <div class="card card-body">
+                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Dropdown</h2>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Modal</h2>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+            Click to Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal_label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modal_label">What is Lorem Ipsum?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="container">
+        <h2>Placeholder-Glow</h2>
+        <div class="card" aria-hidden="true">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title placeholder-glow">
+              <span class="placeholder col-6"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+              <span class="placeholder col-7"></span>
+              <span class="placeholder col-4"></span>
+              <span class="placeholder col-4"></span>
+              <span class="placeholder col-6"></span>
+              <span class="placeholder col-8"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Tooltips</h2>
+        <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="It's worked!">Place the cursor</button>
+      </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS File -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS File -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
